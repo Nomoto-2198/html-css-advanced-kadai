@@ -148,9 +148,6 @@ start.addEventListener('click', () => {
     // 「スタート」ボタンを非表示にする
     start.style.display = 'none';
 
-    // 正しくタイプした文字数を表示する
-    text_count_field.style.display = 'block';
-
     // キーボードのイベント処理
     document.addEventListener('keypress', keyPress);
 });
