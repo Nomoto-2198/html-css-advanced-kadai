@@ -111,15 +111,15 @@ const gameOver = id => {
     setTimeout(() => {
         // console.log('ゲーム終了!');
         const result = confirm(rankCheck(score));
-        }, 10);
+
+        // OKボタンをクリックされたらリロードする
+        if(result == true) {
+            window.location.reload();
+        }
+    }, 10);
 
     //// console.log('ゲーム終了!');
     //const result = confirm(rankCheck(score));
-
-    // OKボタンをクリックされたらリロードする
-    if(result == true) {
-        window.location.reload();
-    }
 };
 
 // カウントダウンタイマー
